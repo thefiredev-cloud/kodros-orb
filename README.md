@@ -27,7 +27,7 @@ flowchart TB
 
 Static diagram: [docs/architecture.svg](docs/architecture.svg). Step-by-step build: [BUILD.md](BUILD.md).
 
-The app starts one `pi` process in RPC mode and talks to it over pipes. Replies stream into the panel and can be spoken aloud. Typing `/help` lists every command. A line that starts with `!` runs in local bash, and one that starts with `@` runs over SSH on a host you name `remote-host` in `~/.ssh/config`. Option-Space opens the panel and Escape collapses it.
+The app starts one `pi` process in RPC mode and talks to it over pipes. Replies stream into the panel and can be spoken aloud. Typing `/help` lists the commands. A line that starts with `!` and a space runs in local bash, and one that starts with `@` and a space runs over SSH on a host you name `remote-host` in `~/.ssh/config`. Option-Space opens the panel and Escape collapses it.
 
 The app needs a stable code-signing identity because macOS drops Screen Recording, Microphone and Speech Recognition grants when an app is signed ad hoc. `build.sh` refuses to build without one.
 
