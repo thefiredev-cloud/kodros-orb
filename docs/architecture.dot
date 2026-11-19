@@ -1,0 +1,24 @@
+digraph "kodros-orb architecture" {
+  rankdir=TB; bgcolor="white"; pad=0.3; nodesep=0.45; ranksep=0.7;
+  node [shape=box, style="rounded,filled", fillcolor="#f6f6f8", color="#c9c9d1", fontname="Helvetica,Arial,sans-serif", fontsize=12, fontcolor="#1b1b1f", margin="0.18,0.1", penwidth=1.4];
+  edge [color="#5c5c66", fontname="Helvetica,Arial,sans-serif", fontsize=10, fontcolor="#5c5c66", arrowsize=0.8];
+  u [label="You\nclick, Option-Space, type or speak"];
+  ui [label="Orb and panel\nAppKit", color="#c2410c", penwidth=2.2, fillcolor="#fff7ed"];
+  pc [label="PiClient\nJSON lines over pipes"];
+  pi [label="pi agent process\nrpc mode, no session"];
+  sc [label="Screen capture\nScreenCaptureKit, panel excluded"];
+  sh [label="Local bash\n! cmd"];
+  ssh [label="ssh remote-host\n@ cmd"];
+  tr [label="Transcript renderer"];
+  sp [label="Speech\nAVSpeechSynthesizer"];
+  u -> ui [];
+  ui -> pc [];
+  pc -> pi [label="pi --mode rpc"];
+  ui -> sc [label="/look"];
+  sc -> pc [];
+  ui -> sh [];
+  ui -> ssh [];
+  pi -> tr [label="reply text"];
+  tr -> ui [];
+  tr -> sp [];
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>ai.meshvault.piorb</string>
+    <key>CFBundleName</key>
+    <string>Kodros Orb</string>
+    <key>CFBundleDisplayName</key>
+    <string>Kodros Orb</string>
+    <key>CFBundleExecutable</key>
+    <string>PiOrb</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>2.1</string>
+    <key>CFBundleVersion</key>
+    <string>2</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Kodros Orb uses the microphone for voice conversations.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Kodros Orb transcribes your speech for voice conversations.</string>
+</dict>
+</plist>

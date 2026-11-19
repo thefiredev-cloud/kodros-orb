@@ -1,0 +1,5 @@
+#!/bin/sh
+while IFS= read -r line; do
+    id=$(printf '%s' "$line" | /usr/bin/sed -E 's/.*"id":"([^"]+)".*/\1/')
+    printf '{"type":"response","id":"%s","success":true,"data":{"text":"pong"}}\n' "$id"
+done
