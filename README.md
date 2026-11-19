@@ -55,7 +55,7 @@ PI_EXECUTABLE="$PWD/Tests/Fixtures/fake-pi" /tmp/orb-tests
 
 ## Limits
 
-- A local tool, installed by hand. It has no release channel, no website and no CI. Only the Pi client has automated tests (9 tests). The panel, voice and screen sharing are checked by hand on a Mac.
+- A local tool, installed by hand. It has no release channel, no website and no CI. Only the Pi client has automated tests (10 tests). The panel, voice and screen sharing are checked by hand on a Mac.
 - `/vault` and `/graphify` call helper programs that are not in this repository (`~/.meshvault/tooling/bin/meshvault-skill` and `~/.local/bin/graphify-recall`). Without them those commands print an error.
 - `!` and `@` run whatever you type with your own permissions. There is no sandbox.
 - The signing identity name defaults to `MeshVault Local Code Signing`. Set `SIGN_IDENTITY` to use another.
