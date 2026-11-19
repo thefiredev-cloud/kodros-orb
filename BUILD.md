@@ -51,7 +51,7 @@ swiftc Sources/PiClient.swift Sources/SlashCommandCompletion.swift Sources/Speak
 PI_EXECUTABLE="$PWD/Tests/Fixtures/fake-pi" /tmp/orb-tests
 ```
 
-On 2026-11-18 this ran 9 tests on Linux with Swift 6.4.2 and all passed. `Tests/Fixtures/fake-pi` is a stand-in for the real agent.
+On 2026-11-19 this ran 10 tests on Linux with Swift 6.1 and all passed. `Tests/Fixtures/fake-pi` is a stand-in for the real agent.
 
 ## First run
 
